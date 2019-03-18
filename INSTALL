@@ -1,0 +1,66 @@
+/******************************************************************************
+ *
+ * wav2mp3 - Convert WAV files to MP3
+ * 
+ * Written by Giuseppe Gorgoglione (gorgoglione@gmail.com)
+ *
+ ******************************************************************************/
+
+INSTRUCTIONS FOR LINUX -----------------
+
+Requirements:
+
+- CMake
+- GNU GCC compiler toolchain
+
+
+To build:
+
+$ cd wav2mp3
+$ cmake .
+$ cmake --build . --target all
+
+
+To test:
+
+$ cd wav2mp3
+$ ./wav2mp3 test
+
+
+To clean:
+
+$ cd wav2mp3
+$ cmake --build . --target clean
+
+
+
+INSTRUCTIONS FOR WINDOWS -----------------
+
+Requirements:
+
+- Mingw compiler toolchain: https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/7.3.0/threads-posix/sjlj/x86_64-7.3.0-release-posix-sjlj-rt_v5-rev0.7z/download
+- CMake: https://github.com/Kitware/CMake/releases/download/v3.14.0/cmake-3.14.0-win64-x64.zip
+
+
+To build:
+
+Unzip x86_64-7.3.0-release-posix-sjlj-rt_v5-rev0.7z to folder C:\mingw64
+Unzip cmake-3.14.0-win64-x64.zip to folder C:\cmake
+
+> set PATH=%PATH%;C:\mingw64\bin;C:\mingw64\opt\bin;C:\cmake\bin
+> cd wav2mp3
+> cmake -G "MinGW Makefiles" .
+> cmake --build . --target all
+
+
+To test:
+
+$ cd wav2mp3
+$ ./wav2mp3.exe test
+
+
+To clean:
+
+> cd wav2mp3
+> cmake --build . --target clean
+
