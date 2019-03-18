@@ -56,7 +56,7 @@ Unzip cmake-3.14.0-win64-x64.zip to folder C:\cmake
 To test:
 
 $ cd wav2mp3
-$ ./wav2mp3.exe test
+$ wav2mp3.exe test
 
 
 To clean:
